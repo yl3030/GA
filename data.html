@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="./index.html"
+          ><img class="logo" src="./public/img/logo.svg" alt=""
+        /></a>
+        <nav class="d-flex align-items-center">
+          <ul class="d-flex align-items-center">
+            <li class="d-lg-block d-none"><a href="#">BINARY TRADE</a></li>
+            <li class="d-lg-block d-none"><a href="#">K CHART</a></li>
+            <li class="d-lg-block d-none"><a href="#">BINARY ORDER</a></li>
+            <li class="position-relative app d-lg-block d-none">
+              <button
+                class="
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  bg-white
+                  app-btn
+                "
+              >
+                <img class="me-2" src="./public/img/cellphone.svg" alt="" />
+                <span>App下載</span>
+              </button>
+              <div class="app-link position-absolute">
+                <div class="d-flex">
+                  <a href="#"
+                    ><img src="./public/img/btn_app_store.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./public/img/btn_google_play.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><img class="nav_icon" src="./public/img/user.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <div class="menu ms-2">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <nav class="mobile-menu">
+      <img class="mobile-back" src="./public/img/right-chevron.svg" alt="" />
+      <ul class="">
+        <li><a href="#">BINARY TRADE</a></li>
+        <li><a href="#">K CHART</a></li>
+        <li><a href="#">BINARY ORDER</a></li>
+        <li>
+          <div class="d-flex app-box">
+            <a href="#" class="w-50"
+              ><img src="./public/img/btn_app_store.svg" alt=""
+            /></a>
+            <a href="#" class="w-50"
+              ><img src="./public/img/btn_google_play.svg" alt=""
+            /></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="w-1040">
+        <div class="tab-box d-flex">
+          <a href="#" class="active"
+            ><button><img src="./public/img/btn-1.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-2.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-3.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-4.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-5.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-6.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-7.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-8.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-9.png" alt="" /></button
+          ></a>
+          <a href="#"
+            ><button><img src="./public/img/btn-10.png" alt="" /></button
+          ></a>
+        </div>
+        <!-- 放圖表的地方 -->
+        <img class="w-100" src="./public/img/data.png" alt="" />
+        <!-- 放圖表的地方 end -->
+        <form
+          action=""
+          class="form-box d-flex justify-content-between mb-100 flex-wrap"
+        >
+          <button class="btn-buy">
+            <p class="name">BUY</p>
+            <p class="number">1781.51</p>
+          </button>
+          <div class="input-box">
+            <label for="">LOTS</label>
+            <input type="text" />
+          </div>
+          <button class="btn-sell">
+            <p class="name">SELL</p>
+            <p class="number">1781.51</p>
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <span class="pe-3">Privacy Policy</span>
+          <span>Terms & Conditions</span>
+        </div>
+        <div>© 2021</div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <style>
+    main {
+      padding: 0;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="./index.html"
+          ><img class="logo" src="./public/img/logo.svg" alt=""
+        /></a>
+        <nav class="d-flex align-items-center">
+          <ul class="d-flex align-items-center">
+            <li class="d-lg-block d-none"><a href="#">BINARY TRADE</a></li>
+            <li class="d-lg-block d-none"><a href="#">K CHART</a></li>
+            <li class="d-lg-block d-none"><a href="#">BINARY ORDER</a></li>
+            <li class="position-relative app d-lg-block d-none">
+              <button
+                class="
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  bg-white
+                  app-btn
+                "
+              >
+                <img class="me-2" src="./public/img/cellphone.svg" alt="" />
+                <span>App下載</span>
+              </button>
+              <div class="app-link position-absolute">
+                <div class="d-flex">
+                  <a href="#"
+                    ><img src="./public/img/btn_app_store.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./public/img/btn_google_play.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center"
+                ><img class="nav_icon" src="./public/img/user.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+          <div class="menu ms-2">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <nav class="mobile-menu">
+      <img class="mobile-back" src="./public/img/right-chevron.svg" alt="" />
+      <ul class="">
+        <li><a href="#">BINARY TRADE</a></li>
+        <li><a href="#">K CHART</a></li>
+        <li><a href="#">BINARY ORDER</a></li>
+        <li>
+          <div class="d-flex app-box">
+            <a href="#" class="w-50"
+              ><img src="./public/img/btn_app_store.svg" alt=""
+            /></a>
+            <a href="#" class="w-50"
+              ><img src="./public/img/btn_google_play.svg" alt=""
+            /></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="banner">
+        <div class="banner_title text-center">
+          <h1>
+            交易股票、指數、外匯<br />
+            和加密數字貨幣差價合約
+          </h1>
+          <p>已有數百萬人使用 Plus500交易，歡迎加入。</p>
+          <div class="bg-white slogan mx-auto">可靠｜簡單｜創新</div>
+        </div>
+        <div
+          class="
+            data
+            d-flex
+            justify-content-sm-between justify-content-center
+            w-990
+          "
+        >
+          <div class="data_red text-center mx-sm-0 mx-2">
+            <h3 class="name">EURUSD</h3>
+            <p class="number">1.19675</p>
+            <p class="percent">2.14%</p>
+          </div>
+          <div class="data_red text-center mx-sm-0 mx-2">
+            <h3 class="name">GBPUSD</h3>
+            <p class="number">1.37885</p>
+            <p class="percent">2.14%</p>
+          </div>
+          <div class="data_green text-center mx-sm-0 mx-2">
+            <h3 class="name">USDCAD</h3>
+            <p class="number">1.25141</p>
+            <p class="percent">-2.14%</p>
+          </div>
+          <div class="data_green text-center d-sm-block d-none">
+            <h3 class="name">USDCHF</h3>
+            <p class="number">0.92327</p>
+            <p class="percent">-2.14%</p>
+          </div>
+          <div class="data_red text-center d-sm-block d-none">
+            <h3 class="name">USDJPY</h3>
+            <p class="number">108.747</p>
+            <p class="percent">2.14%</p>
+          </div>
+        </div>
+        <div class="notify d-flex w-990 flex-wrap">
+          <div
+            class="
+              notify_title
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <img src="./public/img/notifiy.svg" alt="" />
+            <span>公告中心</span>
+          </div>
+          <div class="swiper-container notifySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>
+                  新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p>
+                  新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p>
+                  新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新手指南新
+                </p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="news mb-100">
+        <div class="w-990">
+          <h2 class="title">最新消息</h2>
+          <div class="content">
+            <a href="#">
+              <p class="date">2021-06-07 11:22</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="news_content">
+                  <p>
+                    佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準.
+                  </p>
+                </div>
+                <div class="arrow">
+                  <img src="./public/img/right-chevron.svg" alt="" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <p class="date">2021-06-07 11:22</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="news_content">
+                  <p>
+                    佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準.
+                  </p>
+                </div>
+                <div class="arrow">
+                  <img src="./public/img/right-chevron.svg" alt="" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <p class="date">2021-06-07 11:22</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="news_content">
+                  <p>
+                    佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準.
+                  </p>
+                </div>
+                <div class="arrow">
+                  <img src="./public/img/right-chevron.svg" alt="" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <p class="date">2021-06-07 11:22</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="news_content">
+                  <p>
+                    佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準.
+                  </p>
+                </div>
+                <div class="arrow">
+                  <img src="./public/img/right-chevron.svg" alt="" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <p class="date">2021-06-07 11:22</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="news_content">
+                  <p>
+                    佛州新冠新增確診均值超越紐約州疫情高峰水準佛州新冠新增確診均值超越紐約州疫情高峰水準.
+                  </p>
+                </div>
+                <div class="arrow">
+                  <img src="./public/img/right-chevron.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <button class="btn-common"><a href="#">更多</a></button>
+        </div>
+      </section>
+      <section class="trade mb-100">
+        <h2 class="title">信任交易</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-6 mb-md-0 mb-4">
+              <div class="pic">
+                <img src="./public/img/icon-1.png" alt="" />
+              </div>
+              <p class="text">
+                Plus500SEY Ltd由塞舌耳金融服務管理局授權和監管（許可證 號
+                SD039）
+              </p>
+            </div>
+            <div class="col-md-3 col-6 mb-md-0 mb-4">
+              <div class="pic">
+                <img src="./public/img/icon-2.png" alt="" />
+              </div>
+              <p class="text">
+                Plus500 Ltd 為倫敦證券交易所上市公司主要市場上市的 FTSE 250
+                中的其中一家公司。
+              </p>
+            </div>
+            <div class="col-md-3 col-6 mb-md-0 mb-4">
+              <div class="pic">
+                <img src="./public/img/icon-3.png" alt="" />
+              </div>
+              <p class="text">您的資金存放於獨立的銀行帳戶中</p>
+            </div>
+            <div class="col-md-3 col-6 mb-md-0 mb-4">
+              <div class="pic">
+                <img src="./public/img/icon-4.png" alt="" />
+              </div>
+              <p class="text">SSL加密保護</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="introduce mb-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 mb-md-0 mb-5">
+              <div class="pic">
+                <img src="./public/img/icon-5.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="text">
+                <h3 class="mb-1">控制</h3>
+                <p>利用我們先進的工具和功能，控制您的帳戶：</p>
+                <ul class="intro-list">
+                  <li>止損限價 / 止損 / 移動止損</li>
+                  <li>保證止蝕</li>
+                  <li>負餘額保護</li>
+                  <li>免費電郵& 推送通知市場事件</li>
+                  <li>價格變動、變化比例和交易者意見的提醒</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 mb-md-0 mb-5 order-md-2 order-1">
+              <div class="pic">
+                <img src="./public/img/icon-6.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-12 order-md-1 order-2">
+              <div class="text">
+                <h3>探索市場</h3>
+                <p>
+                  進行世界最受歡迎的市場交易，探索無限交易選擇。我們提供數千種金融工具、免費即時行情和全天候線上支持。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 mb-md-0 mb-5">
+              <div class="pic">
+                <img src="./public/img/icon-7.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="text">
+                <h3>交易者指南</h3>
+                <p>
+                  流覽我們的“如何”系列視頻，瞭解更多關於使用 Plus500
+                  直觀平臺進行線上交易的資訊。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trade-data">
+        <h2 class="title">2020年Plus500交易資料</h2>
+        <div class="row px-sm-0 px-3">
+          <div class="col-4 text-center">
+            <p class="number">82+</p>
+            <p class="unit">百萬</p>
+            <p class="name">已開倉位</p>
+          </div>
+          <div class="col-4 text-center">
+            <p class="number">430+</p>
+            <p class="unit">萬</p>
+            <p class="name">活躍客戶</p>
+          </div>
+          <div class="col-4 text-center">
+            <p class="number">1700+</p>
+            <p class="unit">十億</p>
+            <p class="name">交易價值</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="
+          container
+          d-flex
+          justify-content-between
+          align-items-sm-center align-items-end
+        "
+      >
+        <div>
+          <span class="pe-3">Privacy Policy</span>
+          <span class="d-sm-inline-block d-block">Terms & Conditions</span>
+        </div>
+        <div>© 2021</div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+
+    <script>
+      var swiper = new Swiper(".notifySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
