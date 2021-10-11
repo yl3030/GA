@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/js/select2/select2.min.css" />
+    <link rel="stylesheet" href="./public/css/font/flaticon.css" />
+    <link rel="stylesheet" href="./public/css/layout.css" />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <link rel="stylesheet" href="./public/css/signUp.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <title>MiTRADE登入</title>
   </head>
+  <style>
+    /* body {
+      background-color: #09143b;
+    } */
+  </style>
   <body>
     <header>
       <div class="container d-flex justify-content-between align-items-center">
@@ -95,75 +94,62 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <div class="w-1040">
-        <div class="tab-box d-flex">
-          <a href="#" class="active"
-            ><button><img src="./public/img/btn-1.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-2.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-3.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-4.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-5.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-6.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-7.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-8.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-9.png" alt="" /></button
-          ></a>
-          <a href="#"
-            ><button><img src="./public/img/btn-10.png" alt="" /></button
-          ></a>
-        </div>
-        <!-- 放圖表的地方 -->
-        <img class="w-100" src="./public/img/data.png" alt="" />
-        <!-- 放圖表的地方 end -->
-        <form
-          action=""
-          class="form-box d-flex justify-content-between mb-100 flex-wrap"
-        >
-          <button class="btn-buy">
-            <p class="name">BUY</p>
-            <p class="number">1781.51</p>
-          </button>
-          <div class="input-box">
-            <label for="">LOTS</label>
-            <input type="text" />
+    <!-- <header></header> -->
+    <div id="main">
+      <div class="content">
+        <div class="login-title">手機號碼</div>
+        <form action="">
+          <div class="flex">
+            <select id="country">
+              <option value="taiwan" selected>+886</option>
+              <option value="china">+86</option>
+            </select>
+            <input type="tel" placeholder="手機號碼" />
           </div>
-          <button class="btn-sell">
-            <p class="name">SELL</p>
-            <p class="number">1781.51</p>
-          </button>
+          <div class="flex">
+            <input type="text" placeholder="登錄密碼" />
+          </div>
+          <div class="flex forget">
+            <a href="forget.html">忘記密碼?</a>
+          </div>
+          <input type="submit" value="安全登錄" class="btn-common" />
+          <div class="info login">
+            <p>沒有帳戶？</p>
+            <a href="signUp.html">註冊</a>
+          </div>
         </form>
       </div>
-    </main>
-    <footer>
-      <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <span class="pe-3">Privacy Policy</span>
-          <span>Terms & Conditions</span>
-        </div>
-        <div>© 2021</div>
-      </div>
-    </footer>
-
-    <script src="./public/js/jquery/jquery.min.js"></script>
+    </div>
+    <!-- <footer></footer> -->
+    <script src="./public/js/jquery-3.1.1.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/loading.js"></script>
+    <script src="./public/js/select2/select2.min.js"></script>
+    <script src="./public/js/select2/zh-TW.js"></script>
     <script src="./public/js/index.js"></script>
+    <script>
+      $("#country").select2({
+        templateResult: function (idioma) {
+          var $span = $(
+            "<span><img src='./public/img/" +
+              idioma.id +
+              ".png'/> " +
+              idioma.text +
+              "</span>"
+          );
+          return $span;
+        },
+        templateSelection: function (idioma) {
+          var $span = $(
+            "<span><img src='./public/img/" +
+              idioma.id +
+              ".png'/> " +
+              idioma.text +
+              "</span>"
+          );
+          return $span;
+        },
+      });
+    </script>
   </body>
 </html>
